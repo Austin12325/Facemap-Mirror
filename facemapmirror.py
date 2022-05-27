@@ -9,7 +9,8 @@ bl_info = {
         "version": (1, 0),
         "blender": (3, 1, 2),
         "support": "COMMUNITY",
-        "category": "UV"
+        "category": "UV",
+        "tracker_url": "https://github.com/depdas2/Facemap-Mirror"
         }
 
 
