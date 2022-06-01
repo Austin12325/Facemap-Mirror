@@ -13,6 +13,18 @@ bl_info = {
         }
 
 
+class FlipIslands(bpy.types.Operator):
+    bl_idname = "aus.flipisland"
+    bl_label = "Flip Selected"
+    bl_description = "This will flip the selected islands"
+    bl_options = {"REGISTER"}
+
+    def execute(self, context):
+        bpy.ops.transform.resize(value=(-1, 1, 1))
+        bpy.ops.transform.resize(value=(-1, -1, -1))
+
+        return {"FINISHED"}
+
 class ShowAll(bpy.types.Operator):
     bl_idname = "aus.showalluvs"
     bl_label = "Show all UVs"
@@ -109,9 +121,10 @@ class AusPanel(bpy.types.Panel):
         row.operator("aus.facemapsplitp", text="+")
         col.operator("aus.showmirror", text="Show Mirror")
         col.operator("aus.showalluvs")
+        row.operator("aus.flipisland")
 
 
-classes = [splitUVPX, splitUVNX, ShowMap, ShowAll, AusPanel]
+classes = [splitUVPX, splitUVNX, ShowMap, ShowAll, AusPanel, FlipIslands]
 
 
 def register():
