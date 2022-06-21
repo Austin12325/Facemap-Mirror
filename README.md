@@ -13,5 +13,7 @@ Show all islands
 ![](https://raw.githubusercontent.com/depdas2/Facemap-Mirror/1c094de8037950018a4399639bb193589d353a4f/docs/blender_mGsZhI3VoA.gif)
 
 # Installation 
-Download the py file [here](https://github.com/depdas2/Facemap-Mirror/blob/main/facemapmirror.py).
-Open preferences-> Add-ons-> Install, and select the file you downloaded.
+Navigate to the releases [section](https://github.com/depdas2/Facemap-Mirror/releases/tag/v1.0)
+Download FaceMirror.zip
+Under Blender preferences > Addons > Install
+Select the zip file, Facemirror.zip
