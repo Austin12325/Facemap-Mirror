@@ -1,6 +1,9 @@
 # Facemap-Mirror
 A set of tools used to work with mirrored UVs 
 
+# Usage
+The addon works based on the facemaps the user adds. There is no specific name needed for the facemap, it will iterate through all of them on a mesh. 
+
 # Features 
 Move islands by 1 UV space (+ or -)
 
