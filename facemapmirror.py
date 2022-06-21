@@ -5,6 +5,7 @@ bl_info = {
         "name": "Facemap Mirror",
         "description": "UV map mirroring based on face maps",
         "author": "Austin",
+        "location": "UV Image Editor > Tools > 'TexTools' > Mirror Tools",
         "version": (1, 0),
         "blender": (3, 1, 2),
         "support": "COMMUNITY",
@@ -119,9 +120,10 @@ class AusPanel(bpy.types.Panel):
         col = layout.column()
         row.operator("aus.facemapsplitn", text="-")
         row.operator("aus.facemapsplitp", text="+")
+        col.operator("aus.flipisland")
         col.operator("aus.showmirror", text="Show Mirror")
         col.operator("aus.showalluvs")
-        row.operator("aus.flipisland")
+
 
 
 classes = [splitUVPX, splitUVNX, ShowMap, ShowAll, AusPanel, FlipIslands]
